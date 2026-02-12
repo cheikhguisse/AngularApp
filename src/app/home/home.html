@@ -1,0 +1,52 @@
+<div class="home-container">
+  <div class="welcome-card">
+    <h2 class="welcome-title">Bienvenue sur la page d'accueil</h2>
+
+    <div *ngIf="user" class="user-info-section">
+      <div class="user-avatar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </div>
+
+      <div class="user-details">
+        <div *ngIf="user.name" class="detail-row">
+          <span class="detail-label">👤 Nom :</span>
+          <span class="detail-value">{{ user.name }}</span>
+        </div>
+
+        <div class="detail-row">
+          <span class="detail-label">📧 Email :</span>
+          <span class="detail-value">{{ user.email }}</span>
+        </div>
+
+        <div class="login-time">
+          <small>Connecté depuis {{ getLoginTime() }}</small>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="!user" class="no-user-section">
+      <div class="warning-icon">⚠️</div>
+      <p class="no-user-message">Aucun utilisateur connecté</p>
+      <p class="login-suggestion">Veuillez vous connecter ou vous inscrire pour accéder au contenu.</p>
+      <div class="action-buttons">
+        <a routerLink="/login" class="btn btn-primary">Se connecter</a>
+        <a routerLink="/register" class="btn btn-secondary">S'inscrire</a>
+      </div>
+    </div>
+
+    <div class="logout-section" *ngIf="user">
+      <button (click)="logout()" class="logout-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+          <polyline points="16 17 21 12 16 7"></polyline>
+          <line x1="21" y1="12" x2="9" y2="12"></line>
+        </svg>
+        Se déconnecter
+      </button>
+    </div>
+
+  </div>
+</div>
