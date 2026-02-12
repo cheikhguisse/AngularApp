@@ -4,14 +4,14 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #e8f8f1 0%, #b7f0d1 100%);
 }
 
 .register-card {
   background: white;
   border-radius: 20px;
   padding: 40px;
-  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.15);
+  box-shadow: 0 20px 60px rgba(15, 122, 75, 0.15);
   width: 100%;
   max-width: 500px;
   position: relative;
@@ -25,7 +25,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
+  background: linear-gradient(90deg, #0f7a4b 0%, #2ecc71 100%);
 }
 
 .register-header {
@@ -37,7 +37,7 @@
   width: 80px;
   height: 80px;
   margin: 0 auto 20px;
-  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  background: linear-gradient(135deg, #0f7a4b 0%, #2ecc71 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -88,7 +88,7 @@
 }
 
 .input-icon {
-  stroke: #667eea;
+  stroke: #0f7a4b;
 }
 
 .form-input {
@@ -103,9 +103,9 @@
 
 .form-input:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #0f7a4b;
   background: white;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  box-shadow: 0 0 0 3px rgba(15, 122, 75, 0.1);
 }
 
 .form-input.error {
@@ -159,7 +159,7 @@
 
 .strength-bar.strong {
   width: 100%;
-  background: #68d391;
+  background: #2ecc71;
 }
 
 .strength-text {
@@ -184,7 +184,7 @@
 }
 
 .checkbox-label a {
-  color: #667eea;
+  color: #0f7a4b;
   text-decoration: none;
 }
 
@@ -203,14 +203,14 @@
 }
 
 .checkbox:checked {
-  background-color: #667eea;
-  border-color: #667eea;
+  background-color: #0f7a4b;
+  border-color: #0f7a4b;
 }
 
 .submit-btn {
   width: 100%;
   padding: 16px;
-  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  background: linear-gradient(135deg, #0f7a4b 0%, #2ecc71 100%);
   color: white;
   border: none;
   border-radius: 10px;
@@ -226,7 +226,7 @@
 
 .submit-btn:hover:not(.disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 10px 25px rgba(15, 122, 75, 0.4);
 }
 
 .submit-btn.disabled {
@@ -271,7 +271,7 @@
 }
 
 .login-btn {
-  color: #667eea;
+  color: #0f7a4b;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
@@ -279,7 +279,7 @@
 }
 
 .login-btn:hover {
-  color: #764ba2;
+  color: #2ecc71;
   text-decoration: underline;
 }
 

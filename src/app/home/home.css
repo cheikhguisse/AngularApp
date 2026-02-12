@@ -1,7 +1,7 @@
 :root{
-  --primary:#0f2a5c;
-  --secondary:#1e4fa3;
-  --light:#e6eefc;
+  --primary:#0f7a4b;     /* vert principal */
+  --secondary:#2ecc71;   /* vert clair */
+  --light:#e8f8f1;       /* fond vert léger */
 }
 
 .home-container {
@@ -95,10 +95,10 @@
 .no-user-section {
   text-align: center;
   padding: 40px 20px;
-  background: #fff5f5;
+  background: #f0fff4;
   border-radius: 12px;
   margin-bottom: 30px;
-  border: 2px dashed #fc8181;
+  border: 2px dashed #68d391;
 }
 
 .warning-icon {
@@ -107,7 +107,7 @@
 }
 
 .no-user-message {
-  color: #c53030;
+  color: #2f855a;
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 10px;
@@ -160,7 +160,7 @@
 }
 
 .logout-btn {
-  background: linear-gradient(135deg, #f56565 0%, #c53030 100%);
+  background: linear-gradient(135deg, #38a169 0%, #2f855a 100%);
   color: white;
   border: none;
   padding: 14px 40px;
@@ -176,7 +176,7 @@
 
 .logout-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 20px rgba(245, 101, 101, 0.4);
+  box-shadow: 0 5px 20px rgba(56, 161, 105, 0.4);
 }
 
 /* Section fonctionnalités */

@@ -1,7 +1,7 @@
 :root{
-  --primary:#0f2a5c;
-  --secondary:#1e4fa3;
-  --light:#e6eefc;
+  --primary:#0f7a4b;     /* vert principal */
+  --secondary:#2ecc71;   /* vert clair */
+  --light:#e8f8f1;       /* fond vert léger */
 }
 
 .login-container {
@@ -10,14 +10,14 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: linear-gradient(135deg, #e6eefc 0%, #b8c9f0 100%);
+  background: linear-gradient(135deg, var(--light) 0%, #b7f0d1 100%);
 }
 
 .login-card {
   background: white;
   border-radius: 20px;
   padding: 40px;
-  box-shadow: 0 20px 60px rgba(15, 42, 92, 0.15);
+  box-shadow: 0 20px 60px rgba(15, 122, 75, 0.15);
   width: 100%;
   max-width: 450px;
   position: relative;
@@ -101,7 +101,7 @@
   outline: none;
   border-color: var(--primary);
   background: white;
-  box-shadow: 0 0 0 3px rgba(15, 42, 92, 0.15);
+  box-shadow: 0 0 0 3px rgba(15, 122, 75, 0.15);
 }
 
 .form-input.error {
@@ -186,7 +186,7 @@
 
 .submit-btn:hover:not(.disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(15, 42, 92, 0.4);
+  box-shadow: 0 10px 25px rgba(15, 122, 75, 0.4);
 }
 
 .submit-btn.disabled {
